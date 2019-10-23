@@ -1,0 +1,19 @@
+// Space Hardware Club
+// Two-Month Radiation Challenge
+
+int ledOn = 13;
+
+// the setup routine runs once when you press reset:
+void setup() {
+  Serial.begin(9600); // baud rate of 9600 is standard
+  pinMode(ledOn, OUTPUT);
+  Serial.print("TEST!\n"); // testing serial monitor
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  digitalWrite(ledOn, HIGH);
+  delay(200); 
+  digitalWrite(ledOn, LOW);
+  delay(200);               
+}
